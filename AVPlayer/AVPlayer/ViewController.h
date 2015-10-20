@@ -7,8 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface ViewController : UIViewController
+
+@property(nonatomic,strong)AVPlayer *player;//播放控制器
+@property(nonatomic,strong)AVPlayerItem *playerItem;//播放资源
+
+@property(nonatomic,strong)UIView *playeView;//播放窗口
+@property(nonatomic,strong)UIProgressView *progressView;//进度条
+@property(nonatomic,strong)UIButton *playOrPause;//开始暂停按钮
+
 
 
 @end

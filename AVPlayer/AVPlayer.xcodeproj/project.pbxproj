@@ -17,6 +17,7 @@
 		A78A63461BD6122C00C5C533 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A78A63441BD6122C00C5C533 /* LaunchScreen.storyboard */; };
 		A78A63511BD6122C00C5C533 /* AVPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A78A63501BD6122C00C5C533 /* AVPlayerTests.m */; };
 		A78A635C1BD6122C00C5C533 /* AVPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A78A635B1BD6122C00C5C533 /* AVPlayerUITests.m */; };
+		A78A636A1BD6157A00C5C533 /* Java.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A78A63691BD6157A00C5C533 /* Java.mp4 */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		A78A63571BD6122C00C5C533 /* AVPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A78A635B1BD6122C00C5C533 /* AVPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVPlayerUITests.m; sourceTree = "<group>"; };
 		A78A635D1BD6122C00C5C533 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A78A63691BD6157A00C5C533 /* Java.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Java.mp4; sourceTree = "<group>"; };
 		A827F979EC8482607272DBE8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				A78A63361BD6122C00C5C533 /* AppDelegate.h */,
+				A78A63691BD6157A00C5C533 /* Java.mp4 */,
 				A78A63371BD6122C00C5C533 /* AppDelegate.m */,
 				A78A63391BD6122C00C5C533 /* ViewController.h */,
 				A78A633A1BD6122C00C5C533 /* ViewController.m */,
@@ -273,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A78A63461BD6122C00C5C533 /* LaunchScreen.storyboard in Resources */,
+				A78A636A1BD6157A00C5C533 /* Java.mp4 in Resources */,
 				A78A63431BD6122C00C5C533 /* Assets.xcassets in Resources */,
 				A78A633E1BD6122C00C5C533 /* Main.storyboard in Resources */,
 			);
