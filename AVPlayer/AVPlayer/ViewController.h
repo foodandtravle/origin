@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 
+#define maiScr [UIScreen mainScreen].bounds.size
+
 @interface ViewController : UIViewController
 
 @property(nonatomic,strong)AVPlayer *player;//播放控制器
