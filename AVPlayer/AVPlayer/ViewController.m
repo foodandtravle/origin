@@ -21,6 +21,12 @@
     
     self.view.backgroundColor=[UIColor whiteColor];
     
+    UILabel *lable=[[UILabel alloc]initWithFrame:CGRectMake(10, 320, maiScr.width-20, 100)];
+    
+    [lable setBackgroundColor:[UIColor redColor]];
+    
+    [self.view addSubview:lable];
+    
     [self setBaseView];
     
     //设置视图层
