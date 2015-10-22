@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "AVPlayerDemo.h"
 @interface ViewController ()
 
 @end
@@ -19,20 +19,21 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     
-    self.view.backgroundColor=[UIColor whiteColor];
+    NSString *str=[[NSBundle mainBundle]pathForResource:@"Java" ofType:@"mp4"];
     
-    UILabel *lable=[[UILabel alloc]initWithFrame:CGRectMake(10, 320, maiScr.width-20, 100)];
+    NSURL *url=[NSURL fileURLWithPath:str];
     
-    [lable setBackgroundColor:[UIColor redColor]];
+    AVPlayerItem *playerItem=[AVPlayerItem playerItemWithURL:url];
     
-    [self.view addSubview:lable];
+    AVPlayerDemo *ad=[[AVPlayerDemo alloc]initWithFrame:CGRectMake(10, 10, maiScr.width-40, 300)withPlayerItem:playerItem];
+    [self.view addSubview:ad];
     
-    [self setBaseView];
-    
-    //设置视图层
-    [self setUpPlayer];
-    
-    [self.player play];
+//    [self setBaseView];
+//    
+//    //设置视图层
+//    [self setUpPlayer];
+//    
+//    [self.player play];
 }
 
 -(void)setBaseView{
@@ -87,9 +88,6 @@
         [self addProgressObserve];
 
         [self addNotification];
-        
-        
- 
     }
     
     return _player;
@@ -178,6 +176,7 @@
     AVPlayerItem *playerItem=object;
     
     if ([keyPath isEqualToString:@"status"]) {
+        
         
         AVPlayerStatus status=[[change objectForKey:@"new"]intValue];
         
