@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		13EDEA40498DE50BA7FEB9D7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A35AB461D4636F6618296417 /* libPods.a */; };
+		A7415A5C1BD75FCB003819BF /* AVPlayerDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = A7415A5B1BD75FCB003819BF /* AVPlayerDemo.m */; settings = {ASSET_TAGS = (); }; };
 		A78A63351BD6122C00C5C533 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A78A63341BD6122C00C5C533 /* main.m */; };
 		A78A63381BD6122C00C5C533 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A78A63371BD6122C00C5C533 /* AppDelegate.m */; };
 		A78A633B1BD6122C00C5C533 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A78A633A1BD6122C00C5C533 /* ViewController.m */; };
@@ -40,6 +41,8 @@
 /* Begin PBXFileReference section */
 		1A7E7A8B86BCF46F8A3EC019 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A35AB461D4636F6618296417 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7415A5A1BD75FCB003819BF /* AVPlayerDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPlayerDemo.h; sourceTree = "<group>"; };
+		A7415A5B1BD75FCB003819BF /* AVPlayerDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayerDemo.m; sourceTree = "<group>"; };
 		A78A63301BD6122C00C5C533 /* AVPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A78A63341BD6122C00C5C533 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A78A63361BD6122C00C5C533 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -118,6 +121,8 @@
 				A78A63391BD6122C00C5C533 /* ViewController.h */,
 				A78A633A1BD6122C00C5C533 /* ViewController.m */,
 				A78A633C1BD6122C00C5C533 /* Main.storyboard */,
+				A7415A5A1BD75FCB003819BF /* AVPlayerDemo.h */,
+				A7415A5B1BD75FCB003819BF /* AVPlayerDemo.m */,
 				A78A63421BD6122C00C5C533 /* Assets.xcassets */,
 				A78A63441BD6122C00C5C533 /* LaunchScreen.storyboard */,
 				A78A63471BD6122C00C5C533 /* Info.plist */,
@@ -340,6 +345,7 @@
 				A78A63411BD6122C00C5C533 /* AVPlayer.xcdatamodeld in Sources */,
 				A78A63381BD6122C00C5C533 /* AppDelegate.m in Sources */,
 				A78A63351BD6122C00C5C533 /* main.m in Sources */,
+				A7415A5C1BD75FCB003819BF /* AVPlayerDemo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
