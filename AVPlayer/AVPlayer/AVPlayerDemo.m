@@ -78,12 +78,11 @@
         
         _player=[AVPlayer playerWithPlayerItem:_playerItem];
         
-         [self addobserToPlayerItem:_playerItem];
+        [self addobserToPlayerItem:_playerItem];
         
         [self addProgress];
         
         [self addNotification];
-        
     }
 
     return _player;
@@ -102,6 +101,8 @@
         float current=CMTimeGetSeconds(time);
         
         float total=CMTimeGetSeconds([playerItem duration]);
+        
+        NSLog(@"当前进度   :  %.2f",current);
         
         if (current) {
             
@@ -132,18 +133,17 @@
     
     AVPlayerItem *playerItem=object;
     
-    NSLog(@"a");
     if ([keyPath isEqualToString:@"status"]) {
-        NSLog(@"b");
-        AVPlayerStatus status=[[change objectForKey:@"status"] intValue];
+        
+        AVPlayerStatus status=[[change objectForKey:@"new"]intValue];
         
         if (status==AVPlayerStatusReadyToPlay) {
             
-            NSLog(@"正在播放.....视频总长度.......%.2f",CMTimeGetSeconds(playerItem.duration));
+            NSLog(@"正在播放.......视频总长度....%.2f",CMTimeGetSeconds(playerItem.duration));
         }
         
     }else if ([keyPath isEqualToString:@"loadedTimeRanges"]){
-        NSLog(@"c");
+        
         NSArray *array=playerItem.loadedTimeRanges;
         
         CMTimeRange timeRange=[array.firstObject CMTimeRangeValue];
@@ -178,20 +178,6 @@
     
     [_playerItem removeObserver:self forKeyPath:@"loadedTimeRanges"];
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
