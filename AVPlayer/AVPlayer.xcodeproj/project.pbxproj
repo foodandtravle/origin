@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		13EDEA40498DE50BA7FEB9D7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A35AB461D4636F6618296417 /* libPods.a */; };
-		A7415A5C1BD75FCB003819BF /* AVPlayerDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = A7415A5B1BD75FCB003819BF /* AVPlayerDemo.m */; settings = {ASSET_TAGS = (); }; };
+		A7415A5C1BD75FCB003819BF /* AVPlayerDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = A7415A5B1BD75FCB003819BF /* AVPlayerDemo.m */; };
 		A78A63351BD6122C00C5C533 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A78A63341BD6122C00C5C533 /* main.m */; };
 		A78A63381BD6122C00C5C533 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A78A63371BD6122C00C5C533 /* AppDelegate.m */; };
 		A78A633B1BD6122C00C5C533 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A78A633A1BD6122C00C5C533 /* ViewController.m */; };
@@ -18,7 +18,7 @@
 		A78A63461BD6122C00C5C533 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A78A63441BD6122C00C5C533 /* LaunchScreen.storyboard */; };
 		A78A63511BD6122C00C5C533 /* AVPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A78A63501BD6122C00C5C533 /* AVPlayerTests.m */; };
 		A78A635C1BD6122C00C5C533 /* AVPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A78A635B1BD6122C00C5C533 /* AVPlayerUITests.m */; };
-		A78A636A1BD6157A00C5C533 /* Java.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A78A63691BD6157A00C5C533 /* Java.mp4 */; settings = {ASSET_TAGS = (); }; };
+		A78A636A1BD6157A00C5C533 /* Java.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A78A63691BD6157A00C5C533 /* Java.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -441,6 +441,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Debug;
 		};
@@ -478,6 +479,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

@@ -168,6 +168,8 @@
     //AVPlayerItem *playerItem=[noti object];
     
     NSLog(@"播放完成");
+    
+    [self removeFromSuperview];
 }
 
 -(void)dealloc{
