@@ -51,6 +51,7 @@
     return self;
 }
 
+//这个的注释怎么没写啊
 -(void)playOrPauseBtnClick:(UIButton *)sender{
     
     if (self.player.rate==0) {
